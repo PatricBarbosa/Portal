@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assessoria</title>
+    <link rel="stylesheet" href="../CSS/assessoria.css">
+</head>
+
+<body>
+    <!-- barra de navegação -->
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <img class="logo" src="../IMAGE/logo-firma.png" alt="Logo villela Brasil">
+            </div>
+            <nav class="navbarMobile">
+                <ul id="MenuItems">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/Contratos.html">Contratos</a></li>
+                    <li><a href="#" style="font-weight: 900; border-bottom: 3px solid var(--cor-hover); color: var(--cor-hover);">Assessoria</a></li>
+                    <li><a href="../html/Franqueados.html">Franqueados</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--area do formulario-->
+    
+    <div class="fundo">
+        <div class="container">
+            <div class="form-image">
+               <div class="perfil">
+                    <div>
+                        <img src="../IMAGE/icons/perfil.png" alt="">
+                    </div>
+                    <div>
+                        <p class="nome">assessor(a)</p>
+                    </div>
+
+                    <div class="classe">
+                        <div>
+                            <img src="../IMAGE/icons/golden-star.png" style="width: 20px;" alt="">
+                        </div>
+                    </div>
+               </div>
+
+               <div>
+                <div class="funcoes">
+
+                        <ul class="opcoes">
+                        <div>
+                            <li><a href="../html/Contratos.html" style="font-weight: 900; color: var(--cor-hover);">Cadastro</a></li>
+                        </div>
+                        <div>
+                            <li><a href="#">Consulta</a></li>
+                        </div>
+                        <div>
+                            <li><a href="../html/Franqueados.html">Comissões</a></li>
+                        </div>
+                    </ul>
+                </div>
+               </div>
+            </div>
+            <div class="form">
+                <form   action="https://sheetdb.io/api/v1/rzyubi4ewa8ri"
+                    method="post"
+                    name="FormTest">
+                    <div class="form-header">
+                        <div class="tittle">
+                            <h1>Cadastro de reuniões</h1>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="assessoria">Assessoria</label>
+                            <input id="assessoria" type="text" name="data[assessoria]" placeholder="Nome completo" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="data">Data agendada</label>
+                            <input id="data" type="date" name="data[data]" placeholder="data atual" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="franqueado">Franqueado</label>
+                            <input id="franqueado" type="text" name="data[franqueado]" placeholder="Para qual franqueado ?" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="estado">Estado</label>
+                            <input id="estado" type="text" name="data[estado]" placeholder="Estado da reunião" required>
+                        </div>
+
+
+
+                        <div class="input-box">
+                            <label for="password">CNPJ</label>
+                            <input id="cnpj" type="" name="data[cnpj]" placeholder="00.000.000/0000-00" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="razao">Razão social</label>
+                            <input id="razao" type="text" name="data[nomeEmpresa]" placeholder="Nome da empresa" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="contato">Contato</label>
+                            <input id="contato" type="tel" name="data[contato]" placeholder="(xx) x xxxx-xxxx" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="modalidade">Modalidade</label>
+                            <input id="modalidade" type="text" name="data[modalidade]" placeholder="Online ou Presencial" required>
+                        </div>
+                    </div>
+                    <div class="gender-inputs">
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input type="radio" id="viagem" name="data[obs]" value="Cliente em viagem">
+                                <label for="female">Cliente em viagem</label>
+                            </div>
+                            <div class="gender-input">
+                                <input type="radio" id="nao-reside" name="data[obs]" value="Não reside na região">
+                                <label for="male">Não reside na região</label>
+                            </div>
+        
+                            <div class="gender-input">
+                                <input type="radio" id="preferencia" name="data[obs]" value="Preferencia do cliente">
+                                <label for="others">Preferencia do cliente</label>
+                            </div>
+        
+                            <div class="gender-input">
+                                <input type="radio" id="Outros" name="data[obs]" value="Outros">
+                                <label for="none">Outros</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botao">
+                        <button type="submit" onclick="limpaForm()">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--area do rodapé e jabah-->
+    <div class="footer">
+        <div class="myName">
+            <p> P1 desenvolvimento web</p1>
+        </div>
+        
+        <div class="links">
+            <ul class="itens">
+                <li><a target="_blank" href="https://wa.me/5551994058617"><img src="../IMAGE/logos/WhatsApp-logo.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/umcaramarrom/?next=%2F"><img src="../IMAGE/logos/Instagram-logo.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid=12619604099_asid=122510712920_crid=509739556235_kw=linked_d=c_tid=kwd-103941963_n=g_mt=e_geo=1001686_slid=&mcid=6821526239111716925&cid=&gclid=CjwKCAjw2OiaBhBSEiwAh2ZSPxhGCRTC5E9EI6GGBkvSPUhXIhRbm_Y9ifu0T41XUNENpO-mBYdgpxoChyoQAvD_BwE&gclsrc=aw.ds"><img src="../IMAGE/logos/linkedin-logo.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="/assets/javascript/limpaForm.js"></script>
+</body>
+</html>

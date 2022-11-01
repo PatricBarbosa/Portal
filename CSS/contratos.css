@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background:url(../IMAGE/blur_pc.jpg);
+    filter: blur(0.5px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.full-page{
+    height: 100vh;
+    width: 100%;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*--------------------------------------------*/
+
+main.cards {
+    position: relative;
+    overflow: hidden;
+
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+main.cards section.card{
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 1.5vw;
+    border-radius: 8px;
+    max-height: 360px;
+}
+
+main.cards section.card:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+main.cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img{
+    margin-top: -15px;
+    width: 100%;
+}
+
+main.cards section.card h3{
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+main.cards section.card span{
+    max-width: 250px;
+    font-size: 80%;
+    color: #fff;
+    margin-bottom: 30px;
+
+}
+
+
+
+
+/*-----------------------------------------*/
+/*------ Adptação para celular ------------*/
+/*-----------------------------------------*/
+@media screen and (max-width: 400px){
+    body{
+        font-family: 'Raleway', sans-serif;
+        background-color: rgba(0, 0, 0, 0.5);
+        filter: blur(0.5px);
+
+    }
+}
+
+
+/*-----------------------------------------*/
+/*------ Adptação para tablet -------------*/
+/*-----------------------------------------*/
+@media screen and (max-width: 768px) {
+    main.cards{
+        flex-direction: column;
+    }
+
+    main.cards section.card{
+        margin-bottom: 5vh;
+    }
+
+    body{
+        font-family: 'Raleway', sans-serif;
+        background-image:url(../IMAGE/blur_tablet.jpg);
+        filter: blur(0.5px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .full-page{
+        height: 100%;
+        width: 100%;
+    
+    }
+
+    main.cards {
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main.cards section.card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+    }
+}
