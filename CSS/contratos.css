@@ -134,7 +134,8 @@ form{
 }
 
 .perfil > div img{
-    width: 50px;
+    max-width: 70px;
+    border-radius: 50%;
 }
 
 .classe{
@@ -149,7 +150,6 @@ form{
     color: var(--cor-letras);
     font-weight: 600;
 }
-
 
 
 .funcoes{
@@ -190,6 +190,11 @@ form{
     margin: 0 auto;
     position: absolute;
     border-radius: 50px;
+}
+
+#comboBox option{
+    color: var(--cor-letras);
+    font-weight: 800;
 }
 
 .input-group{
