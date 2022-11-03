@@ -12,7 +12,7 @@
 
 :root{
     --cor-letras:rgb(62, 62, 62);
-    --cor-form:rgba(128, 128, 128, 0.2);
+    --cor-form:rgba(138, 43, 226, 0.2);
     --cor-tema: rgb(225, 225, 225);
     --cor-hover:blueviolet;
 }
@@ -100,7 +100,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--cor-tema);
+    background-color: var(--cor-form);
     padding: 40px;
 }
 
@@ -127,7 +127,7 @@ form{
     height: 30%;
     width: 100%;
 
-    background-color: var(--cor-tema);
+    background-color: var(--cor-form);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -245,8 +245,8 @@ form{
 }
 
 .input-box input::placeholder{
-    color: var(--cor-letras);
-    font-weight: 500;
+    color: var(--cor-form);
+    font-weight: 600;
 }
 
 .gender-group{
