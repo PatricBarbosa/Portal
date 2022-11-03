@@ -7,52 +7,188 @@
     <title>Contratos Villela</title>
     <link rel="stylesheet" href="../CSS/contratos.css">
 </head>
+
 <body>
-    <!--barra de Navegação/Menu-->
+    <!-- barra de navegação -->
     <div class="full-page">
         <div class="navbar">
             <div>
-                <img src="./IMAGE/logo.png" alt="Logo villela Brasil" style="width: 120px;">
-                <!-- <a href="">Villela Brasil</a> -->
+                <img class="logo" src="../IMAGE/aguia-dourada.png" alt="Logo villela Brasil">
             </div>
-            <nav>
+            <nav class="navbarMobile">
                 <ul id="MenuItems">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="" style="font-weight: 600; border-bottom: 2px solid #fff;">Contratos</a></li>
-                    <li><a href="../html/Assessoria.html">Assessoria</a></li>
-                    <li><a href="../html/Franqueados.html">Franqueados</a></li>
-                    <li><a href="../html/Contato.html">Contact Us</a></li>
+                    <li id="home"><a href="../index.html">Home</a></li>
+                    <li id="contratos"><a style="font-weight: 900; border-bottom: 3px solid var(--cor-hover); color: var(--cor-hover);">Contratos</a></li>
+                    <li id="assessoria"><a href="../html/assessoria.html">Assessoria</a></li>
+                    <li id="franqueados"><a href="../html/Franqueados.html">Franqueados</a></li>
+                    <li id="contato" ><a href="../html/Contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
-        
-        <main class="cards">
-            <section class="card">
-                <div class="icon">
-                    <img src="./IMAGE/Logo-Aguia-Fei p carai.svg" alt="teste">
-                </div>
-                <h3 style="text-transform: uppercase;">Contact Us</h3>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ducimus omnis earum eveniet .<br> Ducimus omnis earum eveniet .</span>
-            </section>
-
-            <section class="card">
-                <div class="icon">
-                    <img src="./IMAGE/Logo-Aguia-Fei p carai.svg" alt="teste">
-                </div>
-                <h3 style="text-transform: uppercase;">Aboult Us</h3>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ducimus omnis earum eveniet .<br> Ducimus omnis earum eveniet .</span>
-            </section>
-
-            <section class="card">
-                <div class="icon">
-                    <img src="./IMAGE/Logo-Aguia-Fei p carai.svg" alt="teste">
-                </div>
-                <h3 style="text-transform: uppercase;">More
-                     Us</h3>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ducimus omnis earum eveniet .<br> Ducimus omnis earum eveniet .</span>
-            </section>
-
-        </main>  
     </div>
+
+    <!--area do formulario-->
+    
+    <div class="fundo">
+        <div class="container">
+
+            <div class="form-image">
+               <div class="perfil">
+                    <div id="perfil-foto">
+                        <img src="../IMAGE/ana.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="nome">Ana Claudia</p>
+                    </div>
+
+                    <div class="classe">
+                        <div>
+                            ADM
+                            <img src="../IMAGE/icons/golden-star.png" style="width: 15px;" alt="">
+                        </div>
+                    </div>
+               </div>
+
+               <div>
+                <div class="funcoes">
+
+                        <ul class="opcoes">
+                        <div>
+                            <li><a href="../html/Contratos.html" style="font-weight: 900; color: var(--cor-hover);">Cadastro</a></li>
+                        </div>
+                        <div>
+                            <li><a href="#">Consulta</a></li>
+                        </div>
+                        <div>
+                            <li><a href="../html/Franqueados.html">Comissões</a></li>
+                        </div>
+                    </ul>
+                </div>
+               </div>
+            </div>
+
+
+            <div class="form">
+                <form   action="https://sheetdb.io/api/v1/ohbq0g0tota31" method="post" name="ContratosVillela">
+
+                    <div class="form-header">
+                        <div class="tittle">
+                            <h1>Contratos Villela Brasil</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="mes">Mes</label>
+                            <select id="comboBox" name="data[MES]">
+                                <option value="JANEIRO">Janeiro</option>
+                                <option value="FEVEREIRO">Fevereiro</option>
+                                <option value="MARcO">Março</option>
+                                <option value="ABRIL">Abril</option>
+                                <option value="MAIO">Maio</option>
+                                <option value="JUNHO">Junho</option>
+                                <option value="JULHO">Julho</option>
+                                <option value="AGOSTO">Agosto</option>
+                                <option value="SETEMBRO">Setembro</option>
+                                <option value="OUTUBRO">Outubro</option>
+                                <option value="NOVEMBRO">Novembro</option>
+                                <option value="DEZEMBRO">Dezembro</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label for="franqueado">Franqueado</label>
+                            <input id="franqueado" type="text" name="data[FRANQUEADO]" placeholder="Franqueado" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="assessoria">Assessoria</label>
+                            <input id="assessoria" type="text" name="data[ASSESSORIA]" placeholder="Nome assessor(a)" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="cnpj">CNPJ</label>
+                            <input id="cnpj" type="text" name="data[CNPJ]" placeholder="Cnpj do cliente" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="empresa">Razão social</label>
+                            <input id="comboBox" type="text" name="data[EMPRESA]" placeholder="Razão social" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="contrato">Contrato</label>
+                            <select id="comboBox" name="data[CONTRATO]">
+                                <option value="Plano">Plano</option>
+                                <option value="Produto">Produto</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label for="Produto">Produto</label>
+                            <select id="comboBox" name="data[PRODUTO]">
+                                <option value="PRF-M"selected>PRF-m</option>
+                                <option value="PRFF-M">PRFF-m</option>
+                                <option value="ADESÃO+EXITO">Adesão+Exito</option>
+                                <option value="#"></option>
+                                <option value="COP-M">Cop-m</option>
+                                <option value="E-VILLELA">E-Villela</option>
+                                <option value="P.I.">PI</option>
+                                <option value="P.J.">PJ</option>
+                                <option value="PORTABILIDADE">Portabilidade</option>
+                                <option value="RB-M">RB-m</option>
+                                <option value="SCORE-M">Score-m</option>
+                                <option value="TAX">TAX</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label for="data">Vencimento</label>
+                            <input id="data" type="date" name="data[VENCIMENTO]" placeholder="Vencimento da parcela" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="parcela">Valor da 1° parcela</label>
+                            <input id="parcela" name="data[1° PARC]" placeholder="Valor da 1° parcela" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="total">Total do contrato</label>
+                            <input id="total" name="data[TOTAL]" placeholder="Valor total do contrato" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="contato">Numero de parcelas</label>
+                            <input id="contato" type="tel" name="data[PARCELAS]" placeholder="Numero de parcelas" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="pagamento">Pagamento</label>
+                            <select id="comboBox" name="data[PAGAMENTO]">
+                                <option value="SIM">Pagamento efetuado</option>
+                                <option value="NAO">Sem Pagamento</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label for="observacao">Obeservações</label>
+                            <input id="observacao" type="text" name="data[OBSERVACAO]" placeholder="algum adento ?" required>
+                        </div>
+
+                    </div>
+
+                    <div class="botao">
+                        <button type="submit">Inserir</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--area do rodapé e jabah-->
+    <div class="footer">
+        <div class="myName">
+            <p> P1 desenvolvimento web</p1>
+        </div>
+        
+        <div class="links">
+            <ul class="itens">
+                <li><a target="_blank" href="https://wa.me/5551994058617"><img src="../IMAGE/logos/WhatsApp-logo.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/umcaramarrom/?next=%2F"><img src="../IMAGE/logos/Instagram-logo.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid=12619604099_asid=122510712920_crid=509739556235_kw=linked_d=c_tid=kwd-103941963_n=g_mt=e_geo=1001686_slid=&mcid=6821526239111716925&cid=&gclid=CjwKCAjw2OiaBhBSEiwAh2ZSPxhGCRTC5E9EI6GGBkvSPUhXIhRbm_Y9ifu0T41XUNENpO-mBYdgpxoChyoQAvD_BwE&gclsrc=aw.ds"><img src="../IMAGE/logos/linkedin-logo.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="/assets/javascript/limpaForm.js"></script>
 </body>
 </html>
