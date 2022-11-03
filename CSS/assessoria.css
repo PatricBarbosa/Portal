@@ -223,6 +223,12 @@ form{
     font-weight: 600;
 }
 
+#modalidade option{
+    color: var(--cor-letras);
+    font-weight: 600;
+
+}
+
 .input-box input:hover{
     background-color: rgba(128, 128, 128, 0.2);
     transition: all 0.5s;
@@ -252,7 +258,7 @@ form{
 }
 
 .gender-inputs{
-    height: 20%;
+    height: 10%;
 }
 .gender-input{
     margin-left: 20px;
@@ -269,8 +275,26 @@ form{
     color: var(--cor-letras);
 }
 
+.box-hora  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-hora input{
+    margin: 10px;
+    font-weight: 600;
+    color: var(--cor-letras);
+}
+
+.box-hora label{
+    font-weight: 600;
+    color: var(--cor-letras);
+    font-size: 12px;
+}
+
 .botao{
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
@@ -366,7 +390,7 @@ button{
         flex-direction: column;
         overflow-y: scroll;
         flex-wrap: nowrap;
-        max-height: 50%;
+        max-height: 40%;
         padding: 0;
     }
 
