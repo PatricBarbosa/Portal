@@ -226,7 +226,6 @@ form{
 #modalidade option{
     color: var(--cor-letras);
     font-weight: 600;
-
 }
 
 .input-box input:hover{
