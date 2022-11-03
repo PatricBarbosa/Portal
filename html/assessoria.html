@@ -13,7 +13,7 @@
     <div class="full-page">
         <div class="navbar">
             <div>
-                <img class="logo" src="../IMAGE/logo-firma.png" alt="Logo villela Brasil">
+                <img class="logo" src="../IMAGE/aguia-dourada.png" alt="Logo villela Brasil">
             </div>
             <nav class="navbarMobile">
                 <ul id="MenuItems">
@@ -21,6 +21,7 @@
                     <li><a href="../html/Contratos.html">Contratos</a></li>
                     <li><a href="#" style="font-weight: 900; border-bottom: 3px solid var(--cor-hover); color: var(--cor-hover);">Assessoria</a></li>
                     <li><a href="../html/Franqueados.html">Franqueados</a></li>
+                    <li><a href="../html/Franqueados.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -107,7 +108,11 @@
                         </div>
                         <div class="input-box">
                             <label for="modalidade">Modalidade</label>
-                            <input id="modalidade" type="text" name="data[modalidade]" placeholder="Online ou Presencial" required>
+                            <select id="modalidade" name="data[modalidade]">
+                                <option value="Presencial"selected>Presencial</option>
+                                <option value="Online">Online</option>
+                            </select>
+                            <!-- <input id="modalidade" type="text" name="data[modalidade]" placeholder="Online ou Presencial" required> -->
                         </div>
                     </div>
                     <div class="gender-inputs">
