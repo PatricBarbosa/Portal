@@ -198,13 +198,6 @@ form{
     height: 50%;
 }
 
-.input-group{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
 .input-box{
     display: flex;
     flex-direction: column;

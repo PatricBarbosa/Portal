@@ -2,57 +2,237 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contratos Villela</title>
-    <link rel="stylesheet" href="../">
+    <title>Comercial Villela</title>
+    <link rel="stylesheet" href="../CSS/Franqueados.css">
 </head>
 <body>
+    
     <!--barra de Navegação/Menu-->
     <div class="full-page">
         <div class="navbar">
             <div>
-                <img src="./IMAGE/logo.png" alt="Logo villela Brasil" style="width: 120px;">
-                <!-- <a href="">Villela Brasil</a> -->
+                <img class="logo" src="../IMAGE/logo-firma/aguia-dourada.png" alt="Logo villela Brasil">
             </div>
-            <nav>
+            <nav class="navbarMobile">
                 <ul id="MenuItems">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="../html/Contratos.html">Contratos</a></li>
-                    <li><a href="../html/Assessoria.html">Assessoria</a></li>
-                    <li><a href="" style="font-weight: 600; border-bottom: 2px solid #fff;">Franqueados</a></li>
+                    <li><a href="../html/assessoria.html">Assessoria</a></li>
+                    <li><a href="../html/Franqueados.html">Franqueados</a></li>
                     <li><a href="../html/Contato.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
         
+        <!--area dos cards de noticias-->
         <main class="cards">
-            <section class="card">
-                <div class="icon">
-                    <img src="./IMAGE/Logo-Aguia-Fei p carai.svg" alt="teste">
-                </div>
-                <h3 style="text-transform: uppercase;">Contact Us</h3>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ducimus omnis earum eveniet .<br> Ducimus omnis earum eveniet .</span>
-            </section>
+            <div class="card">
+                <input-header>
+                    <img src="../IMAGE/icons/verificado.png" alt="teste">
+                    <h3 style="text-transform: uppercase;">Reunião realizada</h3>
+                </input-header>
 
-            <section class="card">
-                <div class="icon">
-                    <img src="./IMAGE/Logo-Aguia-Fei p carai.svg" alt="teste">
-                </div>
-                <h3 style="text-transform: uppercase;">Aboult Us</h3>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ducimus omnis earum eveniet .<br> Ducimus omnis earum eveniet .</span>
-            </section>
+                <form action="">
+                    <div class="box-inputs">
+                        <div class="input" id="status">
+                            <label for="status">realizada</label>
+                            <input type="text" name="data[STATUS]" value="realizado">
+                        </div>
 
-            <section class="card">
-                <div class="icon">
-                    <img src="./IMAGE/Logo-Aguia-Fei p carai.svg" alt="teste">
-                </div>
-                <h3 style="text-transform: uppercase;">More
-                     Us</h3>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ducimus omnis earum eveniet .<br> Ducimus omnis earum eveniet .</span>
-            </section>
+                        <div class="input">
+                            <label for="franqueado">Franqueado</label>
+                            <input type="text" name="data[FRANQUEADO]" placeholder="Inserir seu nome completo!">
+                        </div>
 
-        </main>  
+                        <div class="input">
+                            <label for="origem">Origem da reunião</label>
+                            <select name="data[ORIGEM]" id="">
+                                <option value="assessoria" selected>Assessoria</option>
+                                <option value="franqueado">Franqueado</option>
+                                <option value="PaP">PaP</option>
+                                <option value="Indicacao de cliente">Indicação de cliente</option>
+                                <option value="indicacao de parceiro">Indicação de parceiro</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="assessoria">Assessor(a)</label>
+                            <select name="data[ASSESSORIA]" id="">
+                                <option value="">Amanda Telechea</option>
+                                <option value="">Andrigo Vargas</option>
+                                <option value="">Nicole Almeida</option>
+                                <option value="" selected>Sem assessoria</option>
+                                <option value="">Geovana Barbosa</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="modalidade">Modalidade de reunião</label>
+                            <select name="data[MODALIDADE]" id="">
+                                <option value="">Online</option>
+                                <option value="" selected>Presencial</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" name="data[CNPJ]" placeholder="00.000.000/0000-00">
+                        </div>
+
+                        <div class="input">
+                            <label for="data">Data da agenda</label>
+                            <input type="date" name="data[DATA]">
+                        </div>
+
+                        <div class="input">
+                            <label for="responsavel">Responsavel pela empresa</label>
+                            <input type="text" name="data[RESPONSAVEL]" placeholder="Nome do sócio administrador">
+                        </div>
+
+                        <div class="input">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="data[CIDADE]" placeholder="Cidade onde foi agendado">
+                        </div>
+
+                        <di v class="input">
+                            <label for="contato">Contato do cliente</label>
+                            <input type="text" name="data[CONTATO]" placeholder="(00) 0 0000-0000 ou E-mail">
+                        </di>
+
+                        <div class="input">
+                            <label for="feedback">FeedBack</label>
+                            <select name="data[FEEDBACK]" id="">
+                                <OPTion>Contrato assinado</OPTion>
+                                <OPTion>Proposta enviada</OPTion>
+                                <OPTion>Aguardando retorno</OPTion>
+                                <OPTion>Recusado</OPTion>
+                                <OPTion>Cliente sem condições financeiras</OPTion>
+                                <OPTion>Outros</OPTion>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="botao sim">
+                        <button>Registrar</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="card">
+                <input-header>
+                    <img src="../IMAGE/icons/negado.png" alt="teste">
+                    <h3 style="text-transform: uppercase;">Não realizada</h3>
+                </input-header>
+
+                <form action="">
+                    <div class="box-inputs">
+                        <div class="input" id="status">
+                            <label for="status">Não realizada</label>
+                            <input type="text" name="data[STATUS]" value="nao realizado">
+                        </div>
+
+                        <div class="input">
+                            <label for="franqueado">Franqueado</label>
+                            <input type="text" name="data[FRANQUEADO]" placeholder="Inserir seu nome completo!">
+                        </div>
+
+                        <div class="input">
+                            <label for="origem">Origem da reunião</label>
+                            <select name="data[ORIGEM]" id="">
+                                <option value="assessoria" selected>Assessoria</option>
+                                <option value="franqueado">Franqueado</option>
+                                <option value="PaP">PaP</option>
+                                <option value="Indicacao de cliente">Indicação de cliente</option>
+                                <option value="indicacao de parceiro">Indicação de parceiro</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="assessoria">Assessor(a)</label>
+                            <select name="data[ASSESSORIA]" id="">
+                                <option value="">Amanda Telechea</option>
+                                <option value="">Andrigo Vargas</option>
+                                <option value="">Nicole Almeida</option>
+                                <option value="" selected>Sem assessoria</option>
+                                <option value="">Geovana Barbosa</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="modalidade">Modalidade de reunião</label>
+                            <select name="data[MODALIDADE]" id="">
+                                <option value="">Online</option>
+                                <option value="" selected>Presencial</option>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" name="data[CNPJ]" placeholder="00.000.000/0000-00">
+                        </div>
+
+                        <div class="input">
+                            <label for="data">Data da agenda</label>
+                            <input type="date" name="data[DATA]">
+                        </div>
+
+                        <div class="input">
+                            <label for="responsavel">Responsavel pela empresa</label>
+                            <input type="text" name="data[RESPONSAVEL]" placeholder="Nome do sócio administrador">
+                        </div>
+
+                        <div class="input">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="data[CIDADE]" placeholder="Cidade onde foi agendado">
+                        </div>
+
+                        <di v class="input">
+                            <label for="contato">Contato do cliente</label>
+                            <input type="text" name="data[CONTATO]" placeholder="(00) 0 0000-0000 ou E-mail">
+                        </di>
+
+                        <div class="input">
+                            <label for="motivo">Motivo pelo qual não ocorreu</label>
+                            <select name="data[MOTIVO]" id="">
+                                <OPTion>Cliente não estava presente</OPTion>
+                                <OPTion>O endereço não foi localizado</OPTion>
+                                <OPTion>Remarcada</OPTion>
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="remarcada">Em caso de reagendamento, informar a data</label>
+                            <input type="date" name="REAGENDAMENTO">
+                        </div>
+                    </div>
+
+                    <div class="botao nao">
+                        <button>Registrar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </main>
+        
+        <!--area do rodapé e jabah-->
+        <div class="footer">
+            <div class="myName">
+                <p> P1 desenvolvimento web</p1>
+            </div>
+            
+            <div class="links">
+                <ul class="itens">
+                    <li><a target="_blank" href="https://wa.me/5551994058617"><img src="../IMAGE/logos/whats.png" alt=""></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/umcaramarrom/?next=%2F"><img src="../IMAGE/logos/instagram.png" alt=""></a></li>
+                    <li><a target="_blank" href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid=12619604099_asid=122510712920_crid=509739556235_kw=linked_d=c_tid=kwd-103941963_n=g_mt=e_geo=1001686_slid=&mcid=6821526239111716925&cid=&gclid=CjwKCAjw2OiaBhBSEiwAh2ZSPxhGCRTC5E9EI6GGBkvSPUhXIhRbm_Y9ifu0T41XUNENpO-mBYdgpxoChyoQAvD_BwE&gclsrc=aw.ds"><img src="../IMAGE/logos/linkedin-logo.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
