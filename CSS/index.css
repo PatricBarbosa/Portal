@@ -17,45 +17,46 @@ body{
     background-size: cover;
 }
 
+
+
 .background{
     display: flex;
-    height: 88vh;
+    height: 95vh;
+    align-items: center;
 }
 
 .box{
 margin-left: 25%;
 }
 
-.login, .box{
-    margin-top: 30vh;
-}
 
 .login{
     margin-left: 10%;
 }
 
 .login h1{
-    font-size: 70px;
-    color: white;
+    font-size: 30px;
+    color: black;
     font-weight: 500;
 }
 
 .login p{
-    font-size: 10px;
-    color: #fff;
+    font-size: 15px;
+    color: black;
     font-weight: 300;
     padding-top: 5px;
 }
 
 .login p a{
-    color: #fff;
+    color: black;
     font-weight: 700;
 
 }
 
 .form{
     background: transparent;
-    color: #fff;
+    border: none;
+    color: rgb(0, 0, 0);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -68,28 +69,31 @@ margin-left: 25%;
     padding: 0px;
     background-color: transparent;
     border: none;
-    border-bottom: 0.1px solid rgb(255, 255, 255);
+    border-bottom: 0.1px solid rgb(0, 0, 0, 0.5);
     outline: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
     font-family:'Raleway', sans-serif;
 
 }
+
 .form input:hover{
     border-bottom: 0.1px solid rgb(255, 255, 255);
     transform: scale(1.05);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
 .form input::placeholder{
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
 
 }
 
 .button{
     background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 10px;
     font-weight: 10;
     height: 20px;
@@ -98,34 +102,33 @@ margin-left: 25%;
 }
 
 .button:hover{
-    background: #fff;
-    transition: 1s;
-}
-.button:hover{
+    background: rgb(121, 121, 121);
+    transition: 0.5s;
     color: rgba(0, 0, 0, 0.5);
     transition: 0.5s;
-    font-weight: 700;
+    font-weight: 800;
 }
 
-
-
 .login img{
-    height: 45px;
-    padding-bottom: 20px;
+    height: 55px;
+    margin-bottom: 20px;
 }
 
 .footer{
-    height: 10vh;
+    height: 5vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
 
 }
 
 .footer p{
-    color: #fff;
-    margin: 0;
+    color: rgb(0, 0, 0);
+    margin: 0px 10px;
+    font-weight: 600;
+}
+
+.links{
+    display: flex;
 }
 
 .links ul{
@@ -135,12 +138,12 @@ margin-left: 25%;
 .links img{
     padding: 0;
     width: 25px;
-    margin: 15px;
+    margin: 0px 10px;
 }
 
 
-/*------ Adptação para celular ------------*/
 
+/*
 @media screen and (max-width: 700px){
     .background{
         display: flex;
@@ -237,3 +240,4 @@ margin-left: 25%;
 
 
 }
+*/
