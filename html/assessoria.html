@@ -65,6 +65,7 @@
                 </div>
                </div>
             </div>
+
             <div class="form">
                 <form   action="https://sheetdb.io/api/v1/rzyubi4ewa8ri"
                     method="post"
@@ -80,7 +81,7 @@
                             <input id="assessoria" type="text" name="data[assessoria]" placeholder="Nome completo" required>
                         </div>
                         <div class="input-box">
-                            <label for="data">Data agendada</label>
+                            <label for="data">Data</label>
                             <input id="data" type="date" name="data[data]" placeholder="data atual" required>
                         </div>
                         <div class="input-box">
@@ -92,10 +93,8 @@
                             <input id="estado" type="text" name="data[estado]" placeholder="Estado da reunião" required>
                         </div>
 
-
-
                         <div class="input-box">
-                            <label for="password">CNPJ</label>
+                            <label for="cnpj">CNPJ</label>
                             <input id="cnpj" type="" name="data[cnpj]" placeholder="00.000.000/0000-00" required>
                         </div>
                         <div class="input-box">
@@ -112,7 +111,6 @@
                                 <option value="Presencial"selected>Presencial</option>
                                 <option value="Online">Online</option>
                             </select>
-                            <!-- <input id="modalidade" type="text" name="data[modalidade]" placeholder="Online ou Presencial" required> -->
                         </div>
                     </div>
                     <div class="gender-inputs">
@@ -138,9 +136,16 @@
                         </div>
                     </div>
 
-                    <div class="box-hora">
-                        <label for="hora">Horario agendado</label>
-                        <input type="time" name="data[hora]">
+                    <div class="agenda">
+                        <div class="box-hora">
+                            <label for="agenda">Data agendada</label>
+                            <input type="date" name="data[agenda]">
+                        </div>
+
+                        <div class="box-hora">
+                            <label for="hora">Horario</label>
+                            <input type="time" name="data[hora]">
+                        </div>
                     </div>
 
                     <div class="botao">
