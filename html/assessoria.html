@@ -27,7 +27,6 @@
         </div>
     </div>
 
-
     <!--area do formulario-->
     
     <div class="fundo">
@@ -87,10 +86,20 @@
                         <div class="input-box">
                             <label for="franqueado">Franqueado</label>
                             <input id="franqueado" type="text" name="data[franqueado]" placeholder="Para qual franqueado ?" required>
-                        </div>
+                        </div class="input-box">
                         <div class="input-box">
-                            <label for="estado">Estado</label>
-                            <input id="estado" type="text" name="data[estado]" placeholder="Estado da reunião" required>
+                            <label for="">estado</label>
+                            <select name="data[estado]" id="estado">
+                                <option value="RS">RS</option>
+                                <option value="PR">PR</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="AM">AM</option>
+                                <option value="AL">AL</option>
+                                <option value="PE">PE</option>
+                                <option value="PB">PB</option>
+                                <option value="RN">RN</option>
+                            </select>
                         </div>
 
                         <div class="input-box">
@@ -141,7 +150,7 @@
                     <div class="agenda">
                         <div class="obs">
                             <label for="obs">Observações</label>
-                            <input id="obs" type="text" name="data[obs_agenda]" placeholder="Observaçoes sobre a agenda" required>
+                            <input id="obs" type="text" name="data[obs_agenda]" placeholder="Observaçoes sobre a agenda">
                         </div>
 
                         <div class="box-hora">
