@@ -11,9 +11,9 @@
 }
 
 :root{
-    --cor-letras:rgb(62, 62, 62);
-    --cor-form:rgba(138, 43, 226, 0.2);
-    --cor-tema: rgb(225, 225, 225);
+    --cor-letras:rgba(255, 255, 255);
+    --cor-form:rgba(255, 255, 255, 0.5);
+    --cor-tema: rgba(0, 0, 0, 0.9);
     --cor-hover:blueviolet;
 }
 
@@ -25,7 +25,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--cor-tema);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,7 +58,7 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 25px;
     height: 30px;
 }
 
@@ -88,7 +88,7 @@ nav ul li a:hover{
 }
 
 .container{
-    width: 80%;
+    width: 70%;
     height: 95%;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -198,7 +198,8 @@ form{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem;
+    align-items: center;
+    margin: 1rem;
     height: 50%;
 }
 
@@ -221,8 +222,11 @@ form{
 }
 
 option{
-    color: var(--cor-letras);
+    color: var(--cor-tema);
     font-weight: 600;
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 .input-box input:hover{
@@ -248,25 +252,20 @@ option{
 
 .gender-group{
     display: flex;
-    justify-content: center;
-    margin-top: 0.62rem;
-    padding: 0 0.5rem;
+    justify-content: space-between;
+    margin-top: 0.5rem;
 }
 
 .gender-inputs{
     height: 10%;
 }
-.gender-input{
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 .gender-input input{
-    margin-right: 0.1rem;
+    margin-right: 1px;
 }
 
 .gender-input label{
-    font-size: 0.81rem;
+    font-size: 0.70rem;
     font-weight: 600;
     color: var(--cor-letras);
 }
@@ -277,12 +276,16 @@ option{
     flex-direction: column;
     margin: 10px;
     width: 250px;
+    outline: none;
 }
 
 .obs input{
     background-color: transparent;
     border: none;
+    outline: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    color: var(--cor-letras);
+    font-weight: 600;
 }
 
 .obs label{
@@ -293,16 +296,16 @@ option{
 
 .agenda{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .box-hora  {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: left;
 }
 .box-hora input{
-    margin: 10px;
+    margin-top: 5px;
     font-weight: 600;
     color: var(--cor-letras);
     background-color: transparent;
@@ -314,6 +317,7 @@ option{
     font-weight: 600;
     color: var(--cor-letras);
     font-size: 12px;
+    text-align: left;
 }
 
 .botao{
@@ -343,7 +347,7 @@ option{
 
 .myName{
 margin-left: 10px;
-background-color: var(--cor-tema);
+background-color: var(--cor-fundo);
 padding: 5px;
 border-radius: 10px;
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);

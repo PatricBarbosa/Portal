@@ -13,7 +13,7 @@
     <div class="full-page">
         <div class="navbar">
             <div>
-                <img class="logo" src="../IMAGE/logo-firma/aguia-dourada.png" alt="Logo villela Brasil">
+                <img class="logo" src="../IMAGE/logo-firma/logo.png" alt="Logo villela Brasil">
             </div>
             <nav class="navbarMobile">
                 <ul id="MenuItems">
@@ -28,13 +28,12 @@
     </div>
 
     <!--area do formulario-->
-    
     <div class="fundo">
         <div class="container">
             <div class="form-image">
                <div class="perfil">
                     <div>
-                        <img src="../IMAGE/icons/perfil.png" alt="">
+                        <img src="../IMAGE/icons/user.png" alt="">
                     </div>
                     <div>
                         <p class="nome">assessor(a)</p>
@@ -68,7 +67,9 @@
             <div class="form">
                 <form   action="https://sheetdb.io/api/v1/rzyubi4ewa8ri"
                     method="post"
-                    name="FormTest">
+                    name="FormTest"
+                    id="formAssessoria"
+                    >
                     <div class="form-header">
                         <div class="tittle">
                             <h1>Cadastro de reuniões</h1>
@@ -80,7 +81,7 @@
                             <input id="assessoria" type="text" name="data[assessoria]" placeholder="Nome completo" required>
                         </div>
                         <div class="input-box">
-                            <label for="data">Data</label>
+                            <label for="data">Data de hoje</label>
                             <input id="data" type="date" name="data[data]" placeholder="data atual" required>
                         </div>
                         <div class="input-box">
@@ -165,7 +166,7 @@
                     </div>
 
                     <div class="botao">
-                        <button type="submit">Inserir</button>
+                        <button type="submit" onclick="teste()">Inserir</button>
                     </div>
 
                 </form>
@@ -187,7 +188,5 @@
             </ul>
         </div>
     </div>
-
-    <script src="/assets/javascript/limpaForm.js"></script>
 </body>
 </html>
