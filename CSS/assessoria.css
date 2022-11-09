@@ -64,7 +64,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
     color: var(--cor-letras);
 }
@@ -356,6 +356,8 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 .footer p{
     color: var(--cor-letras);
     margin: 0;
+    font-size: 10px;
+    letter-spacing: 1px;
     font-weight: 600;
 }
 
@@ -363,19 +365,52 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 1s;
-    width: 200px;
+    width: 500px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .links ul{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    height: 24px;
 }
 
+.links ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.links img{
+#suporte{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 20px;
+}
+
+#suporte-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: rgb(23, 191, 54);
+    border-radius: 20px;
+    height: 22px;
+}
+
+#whats{
+    width: 20px;
+}
+
+.link-img{
     padding: 0;
     width: 20px;
-    margin: 15px;
+    margin-right: 15px;
 }
 
 .links img:hover{

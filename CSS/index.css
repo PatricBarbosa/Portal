@@ -11,16 +11,16 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    background: var(--cor-fundo);
+    background: var(--cor-tema);
     height: 100vh;
 }
 
 :root{
-    --cor-letras:white;
-    --cor-fundo:rgba(0, 0, 0, 0.9);
+    --cor-letras:rgba(255, 255, 255);
+    --cor-form:rgba(255, 255, 255, 0.5);
+    --cor-tema: rgba(0, 0, 0, 0.9);
+    --cor-hover:blueviolet;
 }
-
-
 
 .background{
     display: flex;
