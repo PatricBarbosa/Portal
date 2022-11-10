@@ -548,7 +548,7 @@ button{
     }
 
     .container{
-        width: 80%;
+        width: 90%;
         height: 90%;
     }
 
@@ -557,11 +557,11 @@ button{
         flex-direction: column;
         overflow-y: scroll;
         flex-wrap: nowrap;
-        max-height: 150px;
+        max-height: 350px;
     }
 
     .gender-inputs{
-        margin-top: 10px;
+        margin: 10px;
     }
 
     .gender-group{
@@ -579,12 +579,16 @@ button{
     .agenda{
         width: 100%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .box-hora{
         margin: 10px;
+    }
+
+    .box-hora label, input{
+        font-size: 10px;
     }
 
     .obs{
