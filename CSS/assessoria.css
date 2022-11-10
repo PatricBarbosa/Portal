@@ -12,7 +12,7 @@
 
 :root{
     --cor-letras:rgba(255, 255, 255);
-    --cor-form:rgba(255, 255, 255, 0.5);
+    --cor-form:rgba(255, 255, 255, 0.03);
     --cor-tema: rgba(0, 0, 0, 0.9);
     --cor-hover:blueviolet;
 }
@@ -177,6 +177,7 @@ form{
     height: 15%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .form-header h1::after{
@@ -192,6 +193,10 @@ form{
 
 .tittle{
     margin: 15px;
+}
+
+.tittle-img img{
+    width: 80px;
 }
 
 .input-group{
@@ -552,6 +557,10 @@ button{
         height: 90%;
     }
 
+    .tittle-img img{
+        width: 50px;
+    }
+
     .input-group{
         margin: 0;
         display: flex;
@@ -573,18 +582,25 @@ button{
 
     .gender-group{
         display: flex;
-
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .gender-group input{
         /*appearance: none;*/
-        width: 8px;
+        width: 10px;
+        margin: 0;
     }
 
     .gender-input{
 
+        max-width: 250px;
+        margin: 2px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     .gender-input label{
         font-size: 8px;
     }
