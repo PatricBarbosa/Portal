@@ -576,10 +576,6 @@ button{
         width: 80%;
     }
 
-    .gender-inputs{
-        margin: 10px;
-    }
-
     .gender-group{
         display: flex;
         flex-wrap: wrap;
@@ -593,12 +589,12 @@ button{
     }
 
     .gender-input{
-
         max-width: 250px;
         margin: 2px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 5px 10px;
     }
 
     .gender-input label{
