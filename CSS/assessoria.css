@@ -573,12 +573,18 @@ button{
 
     .gender-group{
         display: flex;
+
     }
 
     .gender-group input{
-        margin-top: 10px;
+        /*appearance: none;*/
+        width: 8px;
     }
 
+    .gender-input{
+
+    }
+    
     .gender-input label{
         font-size: 8px;
     }
