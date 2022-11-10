@@ -148,8 +148,6 @@ form{
     font-weight: 600;
 }
 
-
-
 .funcoes{
     height: 250PX;
     width: 100%;
@@ -170,7 +168,9 @@ form{
     font-weight: 600;
 }
 
-
+.funcoes ul div li a p:hover{
+    border-bottom: 2px solid white;
+}
 
 .form-header{
     color: var(--cor-letras);
