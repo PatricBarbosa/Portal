@@ -544,7 +544,7 @@ button{
     }
 
     nav ul li a {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .container{
@@ -553,11 +553,18 @@ button{
     }
 
     .input-group{
-        margin-top: 20px;
+        margin: 0;
+        display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
         overflow-y: scroll;
         flex-wrap: nowrap;
         max-height: 350px;
+    }
+
+    .input-box{
+        width: 80%;
     }
 
     .gender-inputs{
@@ -588,7 +595,7 @@ button{
     }
 
     .box-hora label, input{
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .obs{
@@ -636,7 +643,7 @@ button{
     /*-- ajuste de altura das div's--*/
 
     .form-header{
-        height: 5%;
+        height: 10%;
     }
 
     .botao{
