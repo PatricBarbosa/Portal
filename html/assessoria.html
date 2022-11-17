@@ -35,10 +35,11 @@
                     <div>
                         <img src="../IMAGE/icons/user.png" alt="">
                     </div>
+
                     <div>
                         <p class="nome">assessor(a)</p>
                     </div>
-
+                    
                     <div class="classe">
                         <div>
                             <img src="../IMAGE/icons/golden-star.png" style="width: 20px;" alt="">
@@ -65,7 +66,7 @@
             </div>
 
             <div class="form">
-                <form   action="https://sheetdb.io/api/v1/rzyubi4ewa8ri" method="post" name="FormTest" id="formAssessoria">
+                <form action="https://sheetdb.io/api/v1/rzyubi4ewa8ri" method="post" name="FormTest" id="formAssessoria">
                     <div class="form-header">
                         <div class="tittle">
                             <h1>Cadastro de reuniões</h1>
@@ -76,8 +77,27 @@
                     </div>
                     <div class="input-group">
                         <div class="input-box">
+
                             <label for="assessoria">Assessoria</label>
-                            <input id="assessoria" type="text" name="data[assessoria]" placeholder="Nome completo" required>
+                            <select name="data[assessoria]"  id="estado" required>
+                                <option value="ANDRIGO VARGAS SILVA">ANDRIGO VARGAS SILVA</option>
+                                <option value="ALEXSANDRO SOUZA">ALEXSANDRO SOUZA</option>
+                                <option value="CAROLINE ALMEIDA DA SILVA">CAROLINE ALMEIDA DA SILVA</option>
+                                <option value="DOUGLAS LUIS DETONI">DOUGLAS LUIS DETONI</option>
+                                <option value="FLAVIA CAROLINE SCZABELSKI">FLAVIA CAROLINE SCZABELSKI</option>
+                                <option value="GABRIELA APARECIDA SILVEIRA BORGES">GABRIELA APARECIDA SILVEIRA BORGES</option>
+                                <option value="GEOVANA BARBOSA DA SILVA">GEOVANA BARBOSA DA SILVA</option>
+                                <option value="GISELI SILVA DA CRUZ VIGNOLIS">GISELI SILVA DA CRUZ VIGNOLIS</option>
+                                <option value="INGRID DOS SANTOS FAGUNDES">INGRID DOS SANTOS FAGUNDES</option>
+                                <option value="MARIA JULIA BARRIOS">MARIA JULIA BARRIOS</option>
+                                <option value="MAYELLE FERNANDA RUSSI DOS SANTOS">MAYELLE FERNANDA RUSSI DOS SANTOS</option>
+                                <option value="MICHELE MORAES DA ROSA">MICHELE MORAES DA ROSA</option>
+                                <option value="SHAIANE VIEGAS ALVES">SHAIANE VIEGAS ALVES</option>
+                                <option value="THIAGO DOS SANTOS ROSA">THIAGO DOS SANTOS ROSA</option>
+                                <option value="WITORIA SAMIRA SOARES DA SILVA">WITORIA SAMIRA SOARES DA SILVA</option>
+                                <option value="PATRIC AMARAL BARBOSA">PATRIC AMARAL BARBOSA</option>
+                            </select>
+                            
                         </div>
                         <div class="input-box">
                             <label for="data">Data de hoje</label>
@@ -164,7 +184,7 @@
                     </div>
 
                     <div class="botao">
-                        <button type="submit" onclick="teste()">Inserir</button>
+                        <button type="submit">Inserir</button>
                     </div>
 
                 </form>
