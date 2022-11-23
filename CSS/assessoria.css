@@ -226,6 +226,10 @@ form{
     font-weight: 600;
 }
 
+.franq{
+    max-width: 150px;
+}
+
 option{
     color: var(--cor-tema);
     font-weight: 600;
