@@ -25,106 +25,206 @@
                 </ul>
             </nav>
         </div>
-        
+
         <!--area dos cards de noticias-->
-        <main class="cards">
-            <div class="card">
-                <div class="icon">
-                    <img src="./IMAGE/icons/plano.png" alt="teste">
+        <form action="https://sheetdb.io/api/v1/ohbq0g0tota31" method="post">
+            <div class="box1">
+                <div class="franq">
+                    <label for="">Nome franqueado</label>
+                    <select name="data[FRANQUEADO]" id="" placeholder="teste" required>
+                        <option value="PATRIC">PATRIC</option>
+                        <option value="ANA">ANA</option>
+                        <option value="AMANDA">AMANDA</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
                 </div>
+            </div>
 
-                <div class="text">
-                    <h3 style="text-transform: uppercase;">P L A N O</h3>
-                    <span> Contratos do tipo Plano:</span> <BR></BR>
-                    <span>PRF</span>
-                    <span>PRFF</span>
-                    <span>ADESÃO+EXITO</span>
-                    
-                    <br>
-                </div>
+            <div class="cards">
 
-                <form action="">
+                <!-- CARD DE PLANOS-->
+                <div class="card">
+                    <div class="icon">
+                        <img src="./IMAGE/icons/plano.png" alt="">
+                    </div>
+
+                    <div class="text">
+                        <h3 style="text-transform: uppercase;">P L A N O</h3>
+                        <span> Contratos do tipo PLANO:</span> <BR></BR>
+                        <span>PRF</span>
+                        <span>PRFF</span>
+                        <span>ADESÃO+EXITO</span>
+                        
+                        <br>
+                    </div>
+
                     <div class="contrato">
-                        <select name="" id="">
+                        <select name="data[CONTRATO]" id="">
                             <option value="PRF-m">PRF-m</option>
                             <option value="PRFF-m">PRFF-m</option>
                             <option value="Adesão+Exito">Adesão+Exito</option>
                         </select>
                     </div>
-                    <div class="btn">
-                        <BUTTOn>
-                            <P>REGISTRAR PLANO</P>
-                        </BUTTOn>
-                    </div>
-                </form>
-            </div>
 
-            
-            <div class="card">
-                <div class="icon">
-                    <img src="./IMAGE/icons/produto.png" alt="teste">
+                    <div class="btn">
+                        <input name="data[TIPO]" type="radio" value="PLANO">
+                        <BUTTOn><P>REGISTRAR PLANO</P></BUTTOn> 
+                    </div>
                 </div>
 
-                <div class="text">
-                    <h3 style="text-transform: uppercase;">P R O D U T O</h3>
-                    <span>Contratos do tipo Produto:</span> <BR></BR>
-                    <span>PJ</span>
-                    <span>RB</span>
-                    <span>COP</span>
-                    <SPan>SCORE</SPan>
-                </div>  
 
-                <form action="">
+                <!-- CARD DE PRODUTOS-->
+                <div class="card">
+                    <div class="icon">
+                        <img src="./IMAGE/icons/produto.png" alt="teste">
+                    </div>
+
+                    <div class="text">
+                        <h3 style="text-transform: uppercase;">P R O D U T O</h3>
+                        <span> Contratos do tipo PRODUTO:</span> <BR></BR>
+                        <span>COP</span>
+                        <span>PJ</span>
+                        <span>RB</span>
+                        <span>SCORE</span>
+                
+                        <br>
+                    </div>
+
                     <div class="contrato">
-                        <select name="" id="">
+                        <select name="data[CONTRATO]" id="">
+                            <option value="COP">COP</option>
                             <option value="PJ">PJ</option>
                             <option value="RB">RB</option>
-                            <option value="COP">COP</option>
-                            <option value="EXITO">SCORE</option>
+                            <option value="SCORE">SCORE</option>
                         </select>
                     </div>
+
                     <div class="btn">
-                        <BUTTOn>REGISTRAR PRODUTO</BUTTOn>
+                        <BUTTOn><P>REGISTRAR PRODUTO</P></BUTTOn>
+                        <input type="radio" name="data[TIPO]" value="PRODUTO">
                     </div>
-                </form>
-            </div>
-
-
-            <div class="card">
-                <div class="icon">
-                    <img src="./IMAGE/icons/tax.png" alt="teste">
                 </div>
 
-                <div class="text">
-                    <h3 style="text-transform: uppercase;">T A X</h3>
-                    <span> Contratos do tipo Tax: <br><br> TAX </span>
-                </div>
 
-                <form action="">
+                <!-- CARD DE TAX-->
+                <div class="card">
+                    <div class="icon">
+                        <img src="./IMAGE/icons/tax.png" alt="teste">
+                    </div>
+
+                    <div class="text">
+                        <h3 style="text-transform: uppercase;">T A X</h3>
+                        <span> Contratos do tipo TAX:</span> <BR></BR>
+                        <span>TAX</span>
+                        
+                        <br>
+                    </div>
+
                     <div class="contrato">
-                        <select name="" id="">
-                            <option value="PRF-m">TAX</option>
+                        <select name="data[CONTRATO]" id="">
+                            <option value="TAX">TAX</option>
                         </select>
                     </div>
-                    <div class="btn">
-                        <BUTTOn>REGISTRAR TAX</BUTTOn>
-                    </div>
-                </form>
-            </div>
 
-        </main>
-        
-        <!--area do rodapé e jabah-->
-        <div class="footer">
-            <p> P1 desenvolvimento web</p1>
-            <div class="links">
-                <ul class="itens">
-                    <li><a href=""><img src="/assets/IMAGE/Logo-Aguia-Fei p carai.svg" alt=""></a></li>
-                    <li><a href=""><img src="/assets/IMAGE/Logo-Aguia-Fei p carai.svg" alt=""></a></li>
-                    <li><a href=""><img src="/assets/IMAGE/Logo-Aguia-Fei p carai.svg" alt=""></a></li>
-                </ul>
+                    <div class="btn">
+                        <BUTTOn><P>REGISTRAR TAX</P></BUTTOn>
+                        <input type="radio" name="data[TIPO]" value="TAX">
+                    </div>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </body>
 </html>

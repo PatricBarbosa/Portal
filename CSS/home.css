@@ -68,7 +68,35 @@ nav ul li a:hover{
     color: var(--cor-letras);
 }
 
-main.cards {
+.franq{
+    margin-left:2.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.franq label{
+    color: var(--cor-letras);
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.franq select{
+    max-width: 350px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid var(--cor-letras);
+    color: var(--cor-letras);
+    letter-spacing: 2px;
+}
+
+.franq select option{
+    font-weight: 600;
+    color: var(--cor-placeholder);
+}
+
+.cards {
     display: flex;
     justify-content: center;
     height: 80vh;
@@ -92,9 +120,9 @@ main.cards {
 }
 
 .card:hover{
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
     font-size: 15px;
     font-weight: 600;
     background-color: var(--cor-hover);
@@ -102,6 +130,9 @@ main.cards {
 
 .icon{
     height: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .text{
@@ -112,8 +143,9 @@ main.cards {
 }
 
 form{
-    height: 40%;
+    height: 85%;
 }
+
 form select{
     background-color: transparent;
     border: none;
@@ -124,6 +156,8 @@ form select{
     height: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: transparent;
     font-weight: 00;
     font-size: 5px;
@@ -146,29 +180,34 @@ form select{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-main.cards div.card .icon{
+input{
+    display:block;
+}
+
+.icon{
     width: 64px;
     height: 64px;
 }
 
-main.cards div.card img{
+.card img{
     margin-top: -20px;
     width: 100%;
 }
 
-main.cards div.card h3{
+.card h3{
     margin: 20px 0;
     color: var(--cor-letras);
 }
 
-main.cards div.card span{
+.card span{
     max-width: 250px;
-    font-size: 80%;
+    font-size: 60%;
     color: var(--cor-letras);
     margin: 15px;
 
 }
 
+/*================ R O D A P É ==================*/
 .footer{
     height: 10vh;
     display: flex;
