@@ -181,7 +181,7 @@ form select{
 }
 
 input{
-    display:block;
+    margin: 10px;
 }
 
 .icon{
