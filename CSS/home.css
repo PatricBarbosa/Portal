@@ -71,11 +71,20 @@ nav ul li a:hover{
 
 .franq{
     margin-left:2.5%;
+    margin-right: 2.5%;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
+
+.estado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end
+}
+
 
 .franq label{
     color: var(--cor-letras);
@@ -97,6 +106,16 @@ nav ul li a:hover{
 .franq select option{
     font-weight: 600;
     color: var(--cor-placeholder);
+}
+
+.uf{
+    color: white;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cards {
@@ -168,12 +187,13 @@ form select{
 
 .btn button{
     height: 25px;
-    width: 200px;
+    width: 140px;
     border-radius: 8px;
     outline: none;
     border: none;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 10px;
     color: var(--cor-placeholder);
 }
 
@@ -185,6 +205,10 @@ form select{
 
 input{
     margin: 10px;
+}
+
+select option{
+    width: 20px;
 }
 
 .icon{
@@ -253,7 +277,9 @@ input{
     transform: scale(1.3);
 }
 
+/*==== configuração para celular ====*/
 @media screen and (max-width: 450px) {
+
 /*== AREA DO FUNDO ==*/
 .full-page{
     width: 100vw;
@@ -278,12 +304,18 @@ form{
     height: 1000px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .franq{
     height: 10vh;
-    max-width: 400px;
+    width: 90%;
     margin-bottom: 50px;
+
+}
+
+.opcoes{
+    width: 250px;
 }
 
 .cards{
