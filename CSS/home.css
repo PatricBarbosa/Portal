@@ -288,15 +288,19 @@ input{
 
 /*== AREA DA BARRA DE NAVEGAÇÃO==*/
 .navbar{
-    height: 5vh;
+    height: 10vh;
 }
 
 nav ul li{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 nav ul li a{
-    font-size: 8px;
+    font-size: 0.8rem;
+}
+
+.logo{
+    width: 25vw;
 }
 
 /*== AREA DO FORM E CARDS ==*/
