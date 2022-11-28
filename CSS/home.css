@@ -252,31 +252,47 @@ input{
 @media screen and (max-width: 450px) {
 /*== AREA DO FUNDO ==*/
 .full-page{
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 /*== AREA DA BARRA DE NAVEGAÇÃO==*/
 .navbar{
-    height: 10vh;
+    height: 5vh;
 }
 
+nav ul li{
+    margin-right: 10px;
+}
+
+nav ul li a{
+    font-size: 8px;
+}
 
 /*== AREA DO FORM E CARDS ==*/
-.form{
-    height: 90%;
+form{
+    height: 1000px;
     display: flex;
     flex-direction: column;
 }
 
 .franq{
     height: 10vh;
+    max-width: 400px;
+    margin-bottom: 50px;
 }
 
 .cards{
-    height: 1000px;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    max-width: 400px;
+}
+
+.card{
+    max-width: 75vw;
+    max-height: 250px;
+    margin-bottom: 50px;
 }
 
 }
