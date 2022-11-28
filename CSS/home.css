@@ -110,7 +110,7 @@ nav ul li a:hover{
     width: 350px;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
-    transition: all 1s;
+    transition: all 0.5s;
 
     display: flex;
     flex-direction: column;
@@ -120,8 +120,9 @@ nav ul li a:hover{
     margin: 2.5vw;
     border-radius: 8px;
     height: 400px;
+    cursor: pointer;
 }
-
+/*
 .card:hover{
     -moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -130,7 +131,7 @@ nav ul li a:hover{
     font-weight: 600;
     background-color: var(--cor-hover);
 }
-
+*/
 .icon{
     height: 20%;
     display: flex;
@@ -139,7 +140,7 @@ nav ul li a:hover{
 }
 
 .text{
-    height: 50%;
+    height: 60%;
     color: var(--cor-letras);
     font-weight: 600;
     font-size: 20px;
@@ -156,7 +157,6 @@ form select{
 }
 
 .btn{
-    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,6 +208,10 @@ input{
     color: var(--cor-letras);
     margin: 15px;
 
+}
+
+input{
+    display: none;
 }
 
 /*================ R O D A P É ==================*/

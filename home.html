@@ -161,73 +161,68 @@
             <div class="cards">
 
                 <!-- CARD DE PLANOS-->
-                <div class="card">
+                <div class="card" id="blocoPlano">
                     <div class="icon">
                         <img src="./IMAGE/icons/plano.png" alt="">
                     </div>
 
                     <div class="text">
                         <h3 style="text-transform: uppercase;">P L A N O</h3>
-                        <span> Contratos do tipo PLANO:</span> <BR></BR>
+                        <span> Contratos do tipo PLANO:</span><br>
                         <span>PRF</span>
                         <span>PRFF</span>
                         <span>ADESÃO+EXITO</span>
-                        
-                        <br>
                     </div>
 
                     <div class="btn">
-                        <input name="data[TIPO]" type="radio" value="PLANO">
-                        <BUTTOn><P>REGISTRAR PLANO</P></BUTTOn> 
+                        <BUTTOn id="btnPlano">REGISTRAR PLANO</BUTTOn> 
                     </div>
                 </div>
 
 
                 <!-- CARD DE PRODUTOS-->
-                <div class="card">
+                <div class="card" id="blocoProduto">
                     <div class="icon">
                         <img src="./IMAGE/icons/produto.png" alt="teste">
                     </div>
 
                     <div class="text">
                         <h3 style="text-transform: uppercase;">P R O D U T O</h3>
-                        <span> Contratos do tipo PRODUTO:</span> <BR></BR>
+                        <span> Contratos do tipo PRODUTO:</span><br>
                         <span>COP</span>
                         <span>PJ</span>
                         <span>RB</span>
                         <span>SCORE</span>
-                
-                        <br>
                     </div>
 
                     <div class="btn">
-                        <input type="radio" name="data[TIPO]" value="PRODUTO">
                         <BUTTOn><P>REGISTRAR PRODUTO</P></BUTTOn>
                     </div>
                 </div>
 
 
                 <!-- CARD DE TAX-->
-                <div class="card">
+                <div class="card" id="blocoTax">
                     <div class="icon">
                         <img src="./IMAGE/icons/tax.png" alt="teste">
                     </div>
 
                     <div class="text">
                         <h3 style="text-transform: uppercase;">T A X</h3>
-                        <span> Contratos do tipo TAX:</span> <BR></BR>
+                        <span> Contratos do tipo TAX:</span><br>
                         <span>TAX</span>
-                        
-                        <br>
                     </div>
 
                     <div class="btn">
-                        <input type="radio" name="data[TIPO]" value="TAX">
                         <BUTTOn><P>REGISTRAR TAX</P></BUTTOn>
                     </div>
                 </div>
             </div>
+            <input name="data[TIPO]" type="text" id="inpContrato">
+            <input type="text" name="data[CONT]" value="1" id="inputCont">
         </form>
     </div>
+
+    <script src="./JS/home.js"></script>
 </body>
 </html>
